@@ -16,7 +16,10 @@ export function getFiles(category: string): string[] {
   return readdirSync(join(rootPath, "content", category));
 }
 
-export async function getFilesFromSlug(category: string, slug?: string) {
+export async function getFilesFromSlug(
+  category: string,
+  slug?: string
+): Promise<{ mdxSource: any; frontMatter: any }> {
   const source = slug
     ? readFileSync(join(rootPath, "content", category, `${slug}.mdx`), "utf8")
     : readFileSync(join(rootPath, "content", category, `index.mdx`), "utf8");

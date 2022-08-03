@@ -15,7 +15,7 @@ import styles from "../../../styles/Blogcard.module.css";
 import Seo from "components/Seo";
 import { LayoutProps } from "./type";
 import dynamic from "next/dynamic";
-const Comment = dynamic(() => import('../Comment'));
+const Comment = dynamic(() => import("../Comment"));
 
 export function BlogLayout({ child, frontMatter }: LayoutProps) {
   return (
