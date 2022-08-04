@@ -11,9 +11,9 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.2.4",
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
+    "@chakra-ui/react": "1.8.6",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
     "@giscus/react": "^2.2.0",
     "algoliasearch": "^4.14.2",
     "framer-motion": "^6.5.1",

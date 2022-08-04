@@ -1,8 +1,6 @@
 import Seo from "components/Seo";
 import { Layout } from "components";
-import dynamic from "next/dynamic";
-const Comment = dynamic(() => import("components/Comment"));
-
+import Comment from "components/Comment";
 export default function GustBook() {
   return (
     <Layout styles={{ p: [6, 28], minH: "100vh" }}>

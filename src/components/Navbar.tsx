@@ -14,8 +14,7 @@ import {
 } from "@chakra-ui/react";
 import { HiMoon, HiSun, HiSearch, HiMenuAlt3 } from "react-icons/hi";
 import Link from "next/link";
-import dynamic from "next/dynamic";
-const Search = dynamic(() => import("./search"));
+import Search from './search'
 
 interface MenuType {
   color: ColorMode;

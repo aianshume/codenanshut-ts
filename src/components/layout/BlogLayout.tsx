@@ -14,8 +14,7 @@ import { MDXRemote } from "next-mdx-remote";
 import styles from "../../../styles/Blogcard.module.css";
 import Seo from "components/Seo";
 import { LayoutProps } from "./type";
-import dynamic from "next/dynamic";
-const Comment = dynamic(() => import("../Comment"));
+import Comment from "components/Comment";
 
 export function BlogLayout({ child, frontMatter }: LayoutProps) {
   return (

@@ -8,11 +8,10 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { MDXRemote } from "next-mdx-remote";
-import dynamic from "next/dynamic";
 import Seo from "components/Seo";
 import Image from "next/image";
 import { MDXComponents } from "components";
-const Comment = dynamic(() => import("../Comment"));
+import Comment from "components/Comment";
 import { LayoutProps } from "./type";
 
 export function TutorialsPostLayout({ child, frontMatter }: LayoutProps) {
