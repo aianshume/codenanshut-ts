@@ -4,7 +4,7 @@ import { Box, Flex, Button, VStack, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import Seo from "components/Seo";
 import { Layout, ListHead, TutorialCard } from "components";
-import { BlogPageProps } from "pages/type";
+import { BlogPageProps } from "utils/type";
 
 export default function Tutorialspagination({
   posts,

@@ -4,7 +4,7 @@ import siteConfig from "configs/config";
 import { Box, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import { Blogcard, Layout, ListHead } from "components";
 import Link from "next/link";
-import { BlogPageProps } from "../type";
+import { BlogPageProps } from "../../utils/type";
 
 export default function BlogPage({ posts, total, page = 1 }: BlogPageProps) {
   const hasNextPage = Math.ceil(total / siteConfig.postPerPage) > page;

@@ -65,7 +65,7 @@ export function LearnLayout({ child, frontMatter, chapters }: LayoutProps) {
           py={16}
           alignItems="flex-start"
         >
-          <MDXRemote {...child} components={MDXComponents} />
+          <MDXRemote {...child} components={MDXComponents} lazy />
           <VStack w={"100%"}>
             {chapters.map((chapter: any) => {
               return (

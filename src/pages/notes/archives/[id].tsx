@@ -4,7 +4,7 @@ import { Box, Flex, Button, VStack } from "@chakra-ui/react";
 import Link from "next/link";
 import Seo from "components/Seo";
 import { Layout, ListHead, NotesCard } from "components";
-import { BlogPageProps } from "pages/type";
+import { BlogPageProps } from "utils/type";
 
 export default function NotesPagination({ posts, page, total }: BlogPageProps) {
   const hasNextPage = Math.ceil(total / siteConfig.postPerPage) > page;

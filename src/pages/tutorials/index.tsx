@@ -4,7 +4,7 @@ import siteConfig from "configs/config";
 import { Box, Flex, Button, SimpleGrid } from "@chakra-ui/react";
 import Link from "next/link";
 import { Layout, Blogcard, ListHead } from "components";
-import { BlogPageProps } from "pages/type";
+import { BlogPageProps } from "utils/type";
 
 export default function TutorialsPage({
   posts,

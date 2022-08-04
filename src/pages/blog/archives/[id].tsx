@@ -4,7 +4,7 @@ import { Box, SimpleGrid, Flex, Button } from "@chakra-ui/react";
 import Link from "next/link";
 import Seo from "components/Seo";
 import { Blogcard, Layout, ListHead } from "components";
-import { BlogPageProps } from "../../type";
+import { BlogPageProps } from "../../../utils/type";
 
 export default function BlogPagination({ posts, page, total }: BlogPageProps) {
   const hasNextPage = Math.ceil(total / siteConfig.postPerPage) > page;
